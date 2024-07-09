@@ -1,14 +1,13 @@
+/* 
+List of Todo:
+Need to Add Drop Down Menu when Screen is small
+*/
+
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../images/MT.png";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -16,8 +15,8 @@ function Navbar() {
           <img src={logo}></img>
         </a>
       </div>
-      <div className="navbar-toggle" onClick={toggleMenu}></div>
-      <ul className={`navbar-menu ${isOpen ? "show" : ""}`}>
+
+      <ul className={`navbar-menu`}>
         <li>
           <a href="#">Home</a>
         </li>

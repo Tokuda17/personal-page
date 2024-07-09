@@ -1,0 +1,50 @@
+.container {
+    background-image: url("../images/background.jpg");
+    filter: brightness(100%);
+    display: flex;
+    font-family: Poppins;
+    color: rgb(14, 75, 137);
+    background-size: cover; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-height: 600px; /* Full viewport height */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+.welcome {
+    font-size: 1.5rem;
+}
+
+.name{
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 0 0 0;
+    font-weight: bolder;
+    text-decoration: underline rgb(77, 193, 193) 8px;
+}
+
+.text {
+    max-width: 500px;
+    flex: 1;
+    padding-right: 80px;
+}
+
+.description{
+    color: black;
+    font-size: 1.3rem;
+    line-height: 1.75;
+    padding: 20px 0 0 0;
+}
+
+.profile {
+    max-height: 400px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 15%;
+}

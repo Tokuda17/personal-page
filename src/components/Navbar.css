@@ -1,72 +1,49 @@
+/* 
+List of Todo:
+Need to Add Drop Down Menu when Screen is small
+*/
+
+
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Monaco", 'Courier New', Courier, monospace;
 }
 
 /* Navbar Styles */
 .navbar {
     display: flex;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a73e8; /* Blue color */
+    background-color: white;
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo a img {
-    height: 40px;
+    max-height: 40px;
 }
 
 .navbar-menu {
     list-style: none;
-    display: flex;
+    display: flex;    
     margin: 0;
     padding: 0;
 }
 
 .navbar-menu li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .navbar-menu a {
     text-decoration: none;
-    color: white;
+    color: rgb(14, 75, 137);
     font-size: 18px;
-    transition: color 0.3s;
+    transition: color 0.2s;
 }
 
 .navbar-menu a:hover {
-    color: #ffeb3b; /* Light yellow color on hover */
+    color: rgb(77, 193, 193);
 }
 
-/* Toggle Button Styles */
-.navbar-toggle {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .navbar-menu {
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-menu.show {
-        display: flex;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-}

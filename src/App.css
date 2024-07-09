@@ -1,0 +1,8 @@
+h1 {
+   text-align: center; 
+   font-size: 2rem;
+   font-weight: 500;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: rgb(14, 75, 137);
+    text-decoration: underline 2px;
+}

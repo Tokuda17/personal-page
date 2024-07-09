@@ -2,21 +2,21 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
-  );
-}
-
-function Hello() {
-  return (
-    <div>
-      <h1>Hello World</h1>
-      <h2>Michael Tokuda</h2>
-    </div>
+    <>
+      <div>
+        <Navbar />
+      </div>
+      <body>
+        <Home />
+        <h1>Latest Projects</h1>
+        <h1>Experience</h1>
+        <h1>Contact Information</h1>
+      </body>
+    </>
   );
 }
 
