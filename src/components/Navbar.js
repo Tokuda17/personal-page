@@ -21,13 +21,15 @@ function Navbar() {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <a rel="noopener" href="#Latest-Projects">
+            Projects
+          </a>
         </li>
         <li>
-          <a href="#">Experience</a>
+          <a href="#Experience">Experience</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#Contact">Contact</a>
         </li>
       </ul>
     </nav>

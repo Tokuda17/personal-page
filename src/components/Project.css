@@ -23,6 +23,8 @@
 .project-text{
     width: 50%;
     margin: 0px 10px 0px 20px;
+    padding-right: 100px;
+
 }
 
 .project-skills li{
@@ -57,11 +59,16 @@
 
 .project-description{
     line-height: 1.75;
-    padding-right: 100px;
+
 }
 
-.project-date{
+.project-text-bottom{
     color: black;
     margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 

@@ -24,13 +24,14 @@ function App() {
       </div>
       <body>
         <Home />
-        <h1>Latest Projects</h1>
+        <h1 id="Latest-Projects">Latest Projects</h1>
         <Project
           title="Pool Protocol"
           description="A delta-neutral decentralized finance blockchain application meant for caputring leveraged liquidity pool yields. The application required uses JS's Web3.js library to interact with other DeFi protocols such as 1inch Exchange, Pangolin, AAVE, and Alpha Homora."
           image={poolProtocolImg}
           skills={poolProtocolSkills}
           date="June 2022 - May 2024"
+          gitLink="https://github.com/Tokuda17/Pool-Protocol"
         />
         <Project
           title="TokuBot"
@@ -38,9 +39,12 @@ function App() {
           image={tokuBotImg}
           skills={tokuBotSkills}
           date="May 2024 - Current"
+          gitLink="https://github.com/Tokuda17/TokuBot"
         />
-        <h1>Experience</h1>
-        <Contact />
+        <h1 id="Experience">Experience</h1>
+        <div id="Contact">
+          <Contact />
+        </div>
       </body>
     </>
   );
