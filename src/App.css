@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: "Monaco", 'Courier New', Courier, monospace;
+}
+
 h1 {
    text-align: center; 
    font-size: 2rem;
@@ -5,4 +10,7 @@ h1 {
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    color: rgb(14, 75, 137);
     text-decoration: underline 2px;
+}
+body{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }

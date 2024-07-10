@@ -1,0 +1,11 @@
+.skill{
+    font-size: 1rem;
+    padding: 6px 14px;
+    margin: 2px;
+    background-color: rgb(136, 47, 226);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px .1px rgb(86, 83, 83);
+
+
+}

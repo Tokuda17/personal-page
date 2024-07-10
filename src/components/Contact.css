@@ -1,0 +1,17 @@
+.contact-container {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(14, 75, 137);
+    color:white;
+    align-items: top;
+    justify-content: center;
+    padding: 20px;
+    margin: 70px 0px 0px 0px;
+    height: 200px;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+}
+
+.contact-container h1{
+    color: white;
+    
+}

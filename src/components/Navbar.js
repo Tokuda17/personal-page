@@ -9,7 +9,7 @@ import logo from "../images/MT.png";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav id="navbar">
       <div className="navbar-logo">
         <a href="#">
           <img src={logo}></img>

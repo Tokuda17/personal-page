@@ -1,0 +1,67 @@
+.project-container{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(14, 75, 137);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 40px;
+    height: 400px; /* Full viewport height */
+    margin: 0px 20px 20px 20px;
+
+    -webkit-transition: background-color 300ms linear;
+
+}
+
+.project-text h2{
+    height: fit-content;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.project-text{
+    width: 50%;
+    margin: 0px 10px 0px 20px;
+}
+
+.project-skills li{
+    list-style: none;
+}
+
+.project-image{
+    width: 50%;
+    height: 75%;
+    margin-left: 10px;
+}
+
+.project-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 0px 8px 1px black;
+}
+
+.project-skills{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+
+
+.project-container:hover{
+    background-color: rgb(215, 248, 248);
+}
+
+.project-description{
+    line-height: 1.75;
+    padding-right: 100px;
+}
+
+.project-date{
+    color: black;
+    margin-top: 60px;
+}
+
