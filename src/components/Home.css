@@ -1,5 +1,5 @@
 .home-container {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background2.jpg");
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(14, 75, 137);
@@ -56,4 +56,28 @@
 
     transform: scale(1.05, 1.05);
     transition-duration: 500ms;
+}
+
+@media (max-width: 768px){
+    .home-container{
+        display: flex;
+        flex-direction: column-reverse;
+        vertical-align: bottom;
+        max-height: fit-content;
+        padding: 30px;
+    }
+    .text {
+        margin-top: 20px;
+        max-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }  
+    .text .welcome{
+        align-self: center;
+    }
+    .text .name{
+        align-self: center;
+    }
 }

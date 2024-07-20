@@ -18,7 +18,6 @@
 
 .project-text{
     width: 40%;
-
     margin: auto;
 }
 
@@ -30,8 +29,6 @@
     width: 40%;
     height: 80%;
     margin: auto;
-   
-
 }
 
 .project-image img{
@@ -67,11 +64,63 @@
 
 .project-text-bottom{
     color: black;
-    margin-top: 60px;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+@media (max-width: 768px){
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        vertical-align: bottom;
+        max-height: fit-content;
+        height: fit-content;
+        padding: 20px;
+        
+    }
+    .project-text{
+        width: 100%;
+    }
+    .project-image{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-image img{
+        max-height: 14rem;
+    }
 
 
+    .project-image img:hover{
+
+        transform: scale(1.02, 1.02);
+        transition-duration: 500ms;
+    }
+
+    .project-text{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-text-bottom{
+        margin: 10px 0 10px 0;
+
+    }
+
+    .project-text h2{
+        margin: 10px 0 0 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .project-skills{
+        padding:0;
+        margin: 10px 0 0 0;
+    }
+
+
+}

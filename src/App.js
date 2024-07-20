@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import poolProtocolImg from "./images/PoolProtocol.pptx.jpg";
 import tokuBotImg from "./images/Tokubot.png";
+import MT from "./images/MT.png";
 
 function App() {
   const poolProtocolSkills = [
@@ -16,6 +17,7 @@ function App() {
     "Smart Contracts",
   ];
   const tokuBotSkills = ["JavaScript", "Manifest.json", "HTML", "CSS"];
+  const personalPageSkills = ["JavaScript", "HTML", "CSS", "React"];
 
   return (
     <>
@@ -40,6 +42,14 @@ function App() {
           skills={tokuBotSkills}
           date="May 2024 - Current"
           gitLink="https://github.com/Tokuda17/TokuBot"
+        />
+        <Project
+          title="Personal Page"
+          description="React Application to display latest projects and experiences as a software engineers. "
+          image={MT}
+          skills={personalPageSkills}
+          date="June 2024 - Current"
+          gitLink="https://github.com/Tokuda17/personal-page"
         />
         <h1 id="Experience">Experience</h1>
         <div id="Contact">

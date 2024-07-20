@@ -44,6 +44,12 @@ function Contact() {
           </div>
         </section>
         <p>Michael Tokuda</p>
+        <a
+          href="https://www.vecteezy.com/free-vector/white-texture"
+          className="license"
+        >
+          Picture Credit -- White Texture Vectors by Vecteezy
+        </a>
       </div>
     </>
   );
