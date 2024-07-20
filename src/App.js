@@ -31,7 +31,7 @@ function App() {
           image={poolProtocolImg}
           skills={poolProtocolSkills}
           date="June 2022 - May 2024"
-          gitLink="https://github.com/Tokuda17/Pool-Protocol"
+          gitLink="https://github.com/Tokuda17/Pool-Protocol-V2"
         />
         <Project
           title="TokuBot"

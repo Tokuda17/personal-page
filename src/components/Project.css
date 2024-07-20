@@ -3,28 +3,23 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(14, 75, 137);
     align-items: center;
-    justify-content: space-evenly;
     padding: 10px;
     border-radius: 40px;
     height: 400px; /* Full viewport height */
     margin: 0px 20px 20px 20px;
-
     -webkit-transition: background-color 300ms linear;
 
 }
 
 .project-text h2{
-    height: fit-content;
-    margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
 }
 
 .project-text{
-    width: 50%;
-    margin: 0px 10px 0px 20px;
-    padding-right: 100px;
+    width: 40%;
 
+    margin: auto;
 }
 
 .project-skills li{
@@ -32,9 +27,11 @@
 }
 
 .project-image{
-    width: 50%;
-    height: 75%;
-    margin-left: 10px;
+    width: 40%;
+    height: 80%;
+    margin: auto;
+   
+
 }
 
 .project-image img{
@@ -43,6 +40,12 @@
     object-fit: cover;
     border-radius: 50px;
     box-shadow: 0 0px 8px 1px black;
+}
+
+.project-image img:hover{
+
+    transform: scale(1.05, 1.05);
+    transition-duration: 500ms;
 }
 
 .project-skills{
