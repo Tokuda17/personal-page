@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+
 import poolProtocolImg from "./images/PoolProtocol.pptx.jpg";
 import tokuBotImg from "./images/Tokubot.png";
 import MT from "./images/MT.png";
@@ -52,6 +54,7 @@ function App() {
           gitLink="https://github.com/Tokuda17/personal-page"
         />
         <h1 id="Experience">Experience</h1>
+        <Experience />
         <div id="Contact">
           <Contact />
         </div>
