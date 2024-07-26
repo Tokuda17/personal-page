@@ -5,6 +5,7 @@ html{
 body {
     margin: 0;
     font-family: "Monaco", 'Courier New', Courier, monospace;
+    
 }
 
 h1 {
@@ -13,8 +14,24 @@ h1 {
    font-weight: 500;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    color: rgb(14, 75, 137);
-    text-decoration: underline 2px;
+   text-decoration: underline 2px;
+   
 }
-body{
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+.projects{
+    margin: 40px 0 40px 0;
+}
+
+#Experience, #Latest-Projects{
+    width: 100%; 
+    text-align: center; 
+    background-color: #000; 
+    line-height: .1em;
+    margin: 10px 0 20px; 
+    
+}
+
+h1 span { 
+    background: white; 
+    padding:0 10px; 
 }

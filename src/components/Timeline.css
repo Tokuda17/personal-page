@@ -1,0 +1,125 @@
+:root{
+    --background-color: rgb(14, 75, 137);
+}
+
+.timeline-container {
+    box-sizing: border-box;
+    padding: 10px 50px;
+    width: 50%;
+    position: relative;
+    animation: movedown 1s linear forwards;
+}
+
+@keyframes movedown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.timeline-container:nth-child(1){
+    animation-delay: 0s;
+}
+.timeline-container:nth-child(2){
+    animation-delay: 1s;
+}.timeline-container:nth-child(3){
+    animation-delay: 2s;
+}.timeline-container:nth-child(4){
+    animation-delay: 3s;
+}
+
+
+.timeline {
+    position: relative;
+    margin: 40px 0 0 0;
+    background: white;
+    z-index: -2;
+}
+
+.left.timeline-container{
+    left:0;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--background-color);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--background-color);
+  }
+
+.right.timeline-container{
+    left:50%
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--background-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--background-color) transparent transparent;
+  }
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--background-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    margin-left: -3px;
+    animation: moveline 4s linear forwards;
+  }
+
+@keyframes moveline{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 30px;
+  }
+
+/* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right.timeline-container {
+    left: 0%;
+  }
+}
+
+
