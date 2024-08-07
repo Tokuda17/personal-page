@@ -3,10 +3,10 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(14, 75, 137);
     align-items: center;
-    padding: 10px;
     border-radius: 40px;
-    height: 400px; /* Full viewport height */
-    margin: 0px 20px 20px 20px;
+    height: 600px; /* Full viewport height */
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
     -webkit-transition: background-color 300ms linear;
 
 }
@@ -19,6 +19,7 @@
 .project-text{
     width: 40%;
     margin: auto;
+    font-size: 1rem
 }
 
 .project-skills li{
