@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Timeline from "./components/Timeline.js";
-
+import { Analytics } from "@vercel/analytics/react";
 import poolProtocolImg from "./images/PoolProtocol.pptx.jpg";
 import tokuBotImg from "./images/Tokubot.png";
 import donutBasketImg from "./images/logo-no-background.png";
