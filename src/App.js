@@ -120,6 +120,7 @@ function App() {
           <Contact />
         </div>
       </body>
+      <Analytics />
     </div>
   );
 }
