@@ -93,7 +93,7 @@ function App() {
             <Project
               title="Donut Basket Website"
               description="
-            Led a team of 4 to design, develop, and maintain a website for Donut Basket, a local business. Utilized Google Analytics to track user behavior and enhance retention through website optimization. Collaborated on wireframes and prototypes with Figma, resulting in an intuitive interface that attracts 200+ daily viewers. Implemented the front end using React.js to create a responsive and user-friendly experience."
+            Design, develop, and maintain a website for Donut Basket, a local business. Collaborated on wireframes and prototypes with Figma, resulting in an intuitive interface. Implemented the front end using React.js to create a responsive and user-friendly experience."
               image={donutBasketImg}
               skills={donutBasketSkills}
               date="May 2024 - Current"
