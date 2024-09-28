@@ -17,7 +17,7 @@ function Project({ title, description, image, skills, date, gitLink }) {
           </ul>
           <p className="project-description">{description}</p>
           <div className="project-text-bottom">
-            <div className="project-date">{date}</div>
+            {/* <div className="project-date">{date}</div> */}
             <a href={gitLink} target="_blank">
               <GithubFill strokeWidth={1} size={48} color="black" />
             </a>
