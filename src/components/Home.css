@@ -15,32 +15,28 @@
 .home-name{
     font-size: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: var(--text-padding) 0 0 0;
+    padding-top: var(--text-padding);
     font-weight: bolder;
     text-decoration: underline var(--teal-color) 8px;
 }
 
-.home-text-container, .home-welcome {
-    width: 500px;
+.home-text-container{
+    width: 40vw;
     font-size: 1.5rem;
 }
 
 .home-description{
     color: black;
     line-height: 1.75;
-    padding: var(--text-padding) 0 0 0;
+    padding-top: var(--text-padding);
 }
 
 .home-profile {
-    max-height: 400px;
-    max-width: 400px;
     display: flex;
     justify-content: center;
 }
 
-
 .home-profile-picture {
-    max-width: 100%;
     border-radius: 15%;
     box-shadow: 0 0px 10px 2px black;
 }
@@ -51,18 +47,26 @@
 }
 
 @media (max-width: 768px){
+    
     .home-container{
         flex-direction: column-reverse;
         height: 100vh;
+        width: 100vw;
+
     }
     .home-text-container {
-        margin-top: 20px;
         max-height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0;
-    } 
+        width: 80vw;
+        font-size: 1rem;
+    }
+    
+    .home-name{
+        font-size: 2rem;
+    }
+
     .home-welcome, .home-name, .home-description{
         text-align: center;
     }
