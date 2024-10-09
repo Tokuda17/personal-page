@@ -15,10 +15,12 @@
 
 html{
     scroll-behavior:smooth
+    
 }
 
 body {
     min-height: 100vh;
+    padding-top: calc(var(--navbar-height) / 2);
     font-family: "Monaco", 'Courier New', Courier, monospace;
 }
 

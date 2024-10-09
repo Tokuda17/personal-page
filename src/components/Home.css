@@ -1,83 +1,69 @@
+:root{
+    --text-padding: 20px;
+}
+
 .home-container {
     background-image: url("../images/background2.jpg");
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(14, 75, 137);
+    color: var(--navy-color);
     align-items: center;
-    justify-content: center;
-    padding: 100px;
-
-    max-height: 600px; /* Full viewport height */
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+    justify-content: space-evenly;
+    height: 600px; 
 }
 
-.welcome {
+.home-name{
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: var(--text-padding) 0 0 0;
+    font-weight: bolder;
+    text-decoration: underline var(--teal-color) 8px;
+}
+
+.home-text-container, .home-welcome {
+    width: 500px;
     font-size: 1.5rem;
 }
 
-.name{
-    font-size: 3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px 0 0 0;
-    font-weight: bolder;
-    text-decoration: underline rgb(77, 193, 193) 8px;
-}
-
-.text {
-    max-width: 500px;
-    flex: 1;
-    padding-right: 80px;
-}
-
-.description{
+.home-description{
     color: black;
-    font-size: 1.3rem;
     line-height: 1.75;
-    padding: 20px 0 0 0;
+    padding: var(--text-padding) 0 0 0;
 }
 
-.profile {
+.home-profile {
     max-height: 400px;
     max-width: 400px;
     display: flex;
     justify-content: center;
-
 }
 
 
-.profile img {
+.home-profile-picture {
     max-width: 100%;
     border-radius: 15%;
     box-shadow: 0 0px 10px 2px black;
-
 }
 
-.profile img:hover{
-
+.home-profile-picture:hover{
     transform: scale(1.05, 1.05);
     transition-duration: 500ms;
 }
 
 @media (max-width: 768px){
     .home-container{
-        display: flex;
         flex-direction: column-reverse;
-        vertical-align: bottom;
-        max-height: fit-content;
-        padding: 30px;
+        height: 100vh;
     }
-    .text {
+    .home-text-container {
         margin-top: 20px;
         max-height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0;
-    }  
-    .text .welcome{
-        align-self: center;
-    }
-    .text .name{
-        align-self: center;
+    } 
+    .home-welcome, .home-name, .home-description{
+        text-align: center;
     }
 }

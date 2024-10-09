@@ -4,10 +4,10 @@ function Home() {
   return (
     <>
       <div className="home-container">
-        <div className="text">
-          <div className="welcome">Welcome, I'm</div>
-          <div className="name">Michael Tokuda</div>
-          <div className="description">
+        <div className="home-text-container">
+          <div className="home-welcome">Welcome, I'm</div>
+          <div className="home-name">Michael Tokuda</div>
+          <div className="home-description">
             Currently, I am a computer science major at Rutgers University. I'm
             passionate about software engineering and excited to create
             innovative solutions and cutting-edge applications. Join me on my
@@ -15,8 +15,8 @@ function Home() {
             life!
           </div>
         </div>
-        <div className="profile">
-          <img src={profile}></img>
+        <div className="home-profile">
+          <img className="home-profile-picture" src={profile}></img>
         </div>
       </div>
     </>
