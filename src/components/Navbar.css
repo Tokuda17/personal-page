@@ -1,0 +1,130 @@
+/* 
+List of Todo:
+Need to Add Drop Down Menu when Screen is small
+*/
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width:100%;
+    display: flex;
+    height: var(--navbar-height);
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo{
+    height: calc(var(--navbar-height) * .8)
+}
+
+.navbar-links{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar-links{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-link, .sidebar-link{
+    height: 50px;
+}
+
+.navbar-a, .sidebar-a{
+    height:100%;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--navy-color);
+    font-size: 18px;
+    transition: color 0.2s;
+    justify-content: flex-end;
+}
+
+.navbar-a:hover, .sidebar-a:hover{
+    color: var(--teal-color);
+}
+.navbar-link:first-child{
+    margin-right: auto;
+}
+
+.off-screen-menu{
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(40px);
+    height: 100vh;
+    width: 100%;
+    max-width: 50vw;
+    position: fixed;
+    top: 0;
+    right:-50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    padding-top: var(--navbar-height);
+}
+.off-screen-menu-open {
+    right: 0;
+}
+
+.hamburger-menu{
+    height: calc(var(--navbar-height) * .8);
+    width: calc(var(--navbar-height) * .8);
+    display: none;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+}
+.hamburger-menu span{
+    height: 10px;
+    width: 100%;
+    background-color: var(--navy-color);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.hamburger-menu span:nth-child(1){
+    top: 25%;
+}
+.hamburger-menu span:nth-child(3){
+    top: 75%;
+}
+
+.hamburger-menu-open span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+.hamburger-menu-open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-menu-open span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+@media( max-width: 768px){
+    .navbar-links :not(:first-child){
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+    }
+    .sidebar-a{
+        font-size: 20px;
+    }
+}

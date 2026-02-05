@@ -1,0 +1,37 @@
+.experience-container{
+    padding: 20px 30px;
+    background-color: var(--background-color);
+    color: white;
+    position: relative;
+    border: 6px;
+    font-size: 15px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.experience-container:hover{
+    color: red;
+}
+
+
+.experience-logo{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 12px;
+    z-index: 10;
+}
+
+.right img{
+    left: -20px
+}
+
+@media screen and (max-width: 768px) {
+      .right img{
+        left: 10px
+      }
+      .left img{
+        left: 10px
+      }
+    }

@@ -1,0 +1,125 @@
+.project-container{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(14, 75, 137);
+    align-items: center;
+    border-radius: 40px;
+    height: 600px; /* Full viewport height */
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
+    -webkit-transition: background-color 300ms linear;
+
+}
+
+.project-text h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.project-text{
+    width: 40%;
+    margin: auto;
+    font-size: 1rem
+}
+
+.project-skills li{
+    list-style: none;
+}
+
+.project-image{
+    width: 40%;
+    height: 80%;
+    margin: auto;
+}
+
+.project-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 0px 8px 1px black;
+}
+
+.project-image img:hover{
+
+    transform: scale(1.05, 1.05);
+    transition-duration: 500ms;
+}
+
+.project-skills{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+
+
+.project-container:hover{
+    background-color: rgb(215, 248, 248);
+}
+
+.project-description{
+    line-height: 1.75;
+
+}
+
+.project-text-bottom{
+    color: black;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        vertical-align: bottom;
+        max-height: fit-content;
+        height: fit-content;
+        padding: 20px;
+        
+    }
+    .project-text{
+        width: 100%;
+    }
+    .project-image{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-image img{
+        max-height: 14rem;
+    }
+
+
+    .project-image img:hover{
+
+        transform: scale(1.02, 1.02);
+        transition-duration: 500ms;
+    }
+
+    .project-text{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-text-bottom{
+        margin: 10px 0 10px 0;
+
+    }
+
+    .project-text h2{
+        margin: 10px 0 0 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .project-skills{
+        padding:0;
+        margin: 10px 0 0 0;
+    }
+}
