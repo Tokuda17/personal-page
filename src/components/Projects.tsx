@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { projects } from '@/lib/constants';
-import { CodeBracketIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
+import { projects, featuredProject } from '@/lib/constants';
+import { CodeBracketIcon, ArrowTopRightOnSquareIcon, PlayCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Projects() {
   return (
@@ -20,6 +20,82 @@ export default function Projects() {
             <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-[#94a3b8] text-lg">What I&apos;ve been building</p>
+        </motion.div>
+
+        {/* Featured Project: GT Movies Store */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="glass-card overflow-hidden mb-12"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            {/* Text */}
+            <div className="p-6 sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#06b6d4] mb-2">
+                Featured Project
+              </p>
+              <h3 className="text-2xl font-bold text-[#f8fafc] mb-1">
+                {featuredProject.title}
+              </h3>
+              <p className="text-sm text-[#94a3b8] mb-4">{featuredProject.subtitle}</p>
+
+              <p className="text-[#94a3b8] text-sm leading-relaxed mb-5">
+                {featuredProject.description}
+              </p>
+
+              <h4 className="text-sm font-semibold text-[#f8fafc] mb-2">
+                Screens &amp; User Stories
+              </h4>
+              <ul className="space-y-1.5 mb-5">
+                {featuredProject.userStories.map((story, storyIndex) => (
+                  <li
+                    key={storyIndex}
+                    className="text-[#94a3b8] text-sm leading-relaxed pl-4 relative before:content-['▸'] before:absolute before:left-0 before:text-[#6366f1]"
+                  >
+                    {story}
+                  </li>
+                ))}
+              </ul>
+
+              <h4 className="text-sm font-semibold text-[#f8fafc] mb-2">Process</h4>
+              <p className="text-[#94a3b8] text-sm leading-relaxed mb-5">
+                {featuredProject.process}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {featuredProject.technologies.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="px-2 py-1 text-xs font-medium bg-[#6366f1]/10 text-[#6366f1] rounded border border-[#6366f1]/20"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Video Demonstration */}
+            <div className="bg-black/30 p-6 sm:p-8 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/5">
+              <h4 className="flex items-center gap-2 text-sm font-semibold text-[#f8fafc] mb-3">
+                <PlayCircleIcon className="w-5 h-5 text-[#06b6d4]" />
+                Video Demonstration
+              </h4>
+              <video
+                controls
+                preload="metadata"
+                className="w-full rounded-lg border border-white/10"
+              >
+                <source src={featuredProject.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <p className="text-xs text-[#94a3b8] mt-3">
+                A walkthrough of GT Movies Store — its screens, features, and how they
+                fulfill the required user stories.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Projects Grid */}

@@ -66,6 +66,27 @@ export const experiences = [
   },
 ];
 
+export const featuredProject = {
+  title: 'GT Movies Store',
+  subtitle: 'CS 2340 — Objects and Design · Georgia Tech',
+  description:
+    'GT Movies Store is a full-stack e-commerce web application built with Django that lets users browse a movie catalog, search for titles, manage a shopping cart, place orders, and share reviews. I designed and developed the app end-to-end — data models, views, templates, and styling — following Django\'s Model-View-Template (MVT) architecture, with each screen built to satisfy a required user story.',
+  userStories: [
+    'Movies list screen — displays every movie with its poster and price, fulfilling "as a user, I want to browse available movies."',
+    'Search bar — filters the catalog by title so users can quickly find a specific movie.',
+    'Movie detail screen — shows full movie info alongside its reviews; signed-in users can create, edit, and delete their own reviews (full CRUD).',
+    'Account screens — registration, login/logout, and password reset give each user a secure personal account.',
+    'Shopping cart screen — users add movies to their cart, see a running total, and can clear the cart in one click.',
+    'Orders screen — checking out converts the cart into an order, and users can review their order history with dates and totals.',
+    'Admin panel — administrators manage movies, users, orders, and reviews through Django\'s admin interface.',
+  ],
+  process:
+    'I built the project iteratively, treating each user story as a small deliverable: model the data, wire up the view and URL, build the template, then style and test it in the browser before moving on. When I hit questions or doubts, I worked through them with the Django documentation, course materials, and debugging in the Django shell — verifying each feature against its user story before starting the next.',
+  technologies: ['Django', 'Python', 'SQLite', 'HTML/CSS', 'Bootstrap', 'MVT'],
+  github: null,
+  video: '/videos/gt-movies-demo.mp4',
+};
+
 export const projects = [
   {
     title: 'Team Phoenix HPC',
